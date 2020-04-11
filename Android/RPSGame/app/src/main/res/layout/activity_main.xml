@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RPS Game"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:layout_weight="1"
+        android:onClick="rock"
+        android:src="@drawable/rock"/>
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:layout_weight="1"
+        android:onClick="paper"
+        android:src="@drawable/paper"/>
+        <ImageButton
+            android:src="@drawable/scissors"
+            android:layout_width="100dp"
+            android:background="@null"
+            android:layout_weight="1"
+            android:onClick="scissor"
+            android:layout_height="100dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
